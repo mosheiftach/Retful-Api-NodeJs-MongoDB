@@ -3,7 +3,7 @@ const app = express()
 const mongoose = require('mongoose')
 const bodyParser= require("body-parser");
 
-mongoose.connect("mongodb+srv://moshemoshe:qazQAZ123@cluster0.fandl.mongodb.net/NodeJs_Final_Task");
+mongoose.connect("**YOUR MONGODB DATABASE CONNECTIN HERE**");
 const db = mongoose.connection
 db.on('error',(error) => console.log(error))
 db.once('open', ()=>console.log('connected to database'))
